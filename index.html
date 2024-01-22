@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        
+        }
+        h1{text-align: center;
+        color: red;}
+        body{background-color: rgb(255, 255, 255);
+        
+        }
+        footer{
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white; 
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        #aviso{width: 80%; 
+            text-align: center;}
+
+        #redes{width: 20%;
+             text-align: center;}
+
+        #copy{width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        border-top: 2px solid white; }
+        #contenedor-informa { display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        color: blueviolet;
+        border: 2px solid rgb(255, 0, 0);
+        padding: 10px;
+        
+        }
+        #contenedor-informa img { width: 40%;}
+
+        #contenedor-informa article { width: 30%;
+            
+            text-align: center;
+            background-color: white;
+            margin-top: 10px;
+            padding: 20px;
+            border-radius: 5px;
+
+
+        }
+        section#obras {
+            background-color: rgb(255, 255, 255);}
+        
+
+        /*Para moviles*/
+        
+        @media(max-width:600px){ 
+           
+            nav{flex-wrap: wrap;
+            position: static; justify-content: center;
+
+            }
+          
+            
+            #contenedor-informa{flex-wrap: wrap;}
+            #contenedor-informa article{width: 100%;}
+            nav a{width: 100%; text-align: center;}
+
+        }
+       
+        @media (min-width: 601px) and (max-width: 800px){
+      
+            #contenedor-informa{flex-wrap: wrap;}
+            #contenedor-informa article{width: 50%;}
+            nav a{width: 50%; text-align: center;}
+           
+        }
+
+             
+
+    </style>
+</head>
+<body>
+    <section id="informa">
+        <h1 class="titulo">Nuestros servicios</h1>
+        <div id="contenedor-informa"><!-- esto va a ser flex box-->
+            <article>
+                <img src="asistencia.png" alt="">
+                <p>Servicio Tecnico</p>
+            </article>
+            <article>
+                <img src="consultoría-1-300x215.jpg" alt="">
+                <p>Consultoria</p>
+            </article>
+            <article>
+                <img src="mobile.png" alt="">
+                <p>Apps moviles</p>
+            </article>
+            <article>
+                <img src="drone.jpg" alt="">
+                <p>Drone</p>
+            </article>
+            <article>
+                <img src="web.jfif" alt="">
+                <p>Diseño Web</p>
+            </article>
+            <article>
+                <img src="soluciones.jpg" alt="">
+                <p>soluciones</p>
+            </article>     
+        </div>
+    </section>
+    <footer>
+        <div id="aviso">
+            <h2>Aviso</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed doloribus vitae atque eligendi odit maiores, corrupti velit error aspernatur temporibus mollitia ad culpa quibusdam impedit vero dolorem cumque recusandae ratione.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam quis dignissimos veniam architecto doloremque dicta ducimus adipisci quae ullam! Cumque, illo quae praesentium repellat ullam voluptate ratione ut est.</p>
+
+            
+
+
+
+        </div>
+
+        <div id="redes">
+            <h2>Redes sociales</h2>
+            <p>Facebook</p>
+            <p>Instagram</p>
+            <p>Twitter</p>
+
+
+
+        </div>
+        
+        <div id="copy">
+           <p> Copyright IES Virrey Morcillo 2024</p>
+
+
+
+        </div>
+
+
+
+    </footer>
+</body>
+</html>
